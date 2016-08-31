@@ -10,7 +10,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
-Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 
@@ -67,7 +66,6 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
-
 " === Keybindings ===
 
 " == junegunn/fzf ==
@@ -105,6 +103,8 @@ nnoremap <ESC> :noh<CR><ESC>
 
 xnoremap < <gv
 xnoremap > >gv
+
+set laststatus=1
 
 let g:gruvbox_italic=1
 set background=dark
