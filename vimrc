@@ -12,7 +12,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
-Plug 'vim-scripts/SyntaxComplete'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
@@ -38,6 +37,7 @@ let g:jsx_ext_required = 0
 
 let g:flow#enable = 1
 let g:flow#autoclose = 1
+let g:flow#omnicomplete = 1
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -46,7 +46,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
@@ -62,11 +62,17 @@ inoremap <C-T> <ESC>:FZF<CR>i
 nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
-
 " TODO: Move these things into a user setting thing
 set number
 set relativenumber
 set noshowmode
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+if filereadable(getcwd() . '/node_modules/@trunkclub/build/node_modules/flow-bin/cli.js')
+  let g:flow#flowpath = getcwd() . '/node_modules/@trunkclub/build/node_modules/flow-bin/cli.js'
+endif
+
 au BufNewFile,BufRead *.es6 set filetype=javascript.jsx
+au BufWritePost *.es6 if g:flow#enable | call g:flow#typecheck() | endif
+
 nnoremap <ESC> :noh<CR><ESC>
