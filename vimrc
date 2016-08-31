@@ -12,6 +12,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
+Plug 'vim-scripts/SyntaxComplete'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
@@ -34,6 +35,8 @@ let g:deoplete#enable_at_startup = 1
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 let g:jsx_ext_required = 0
+
+let g:flow#enable = 1
 let g:flow#autoclose = 1
 
 set statusline+=%#warningmsg#
@@ -48,6 +51,9 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:tern_request_timeout = 1
+let g:tern_show_signature_in_pum = 0
+
+set completeopt-=preview
 
 " Keybindings for plugins
 nnoremap <C-T> :FZF<CR>
