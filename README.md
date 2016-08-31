@@ -1,2 +1,3 @@
-# modern-js-vimrc
-A vimrc for modern JavaScript/ECMAScript. Batteries included 🔋🔋
+# vimrc.js
+
+A vimrc that Just Works™ for modern JavaScript development.
