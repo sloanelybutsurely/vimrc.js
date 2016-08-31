@@ -21,11 +21,11 @@ Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascr
 Plug 'gavocanov/vim-js-indent', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
 
 " == JavaScript tools integration ==
 Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'scrooloose/syntastic'
-
 
 " == My personal plugins ==
 Plug 'morhetz/gruvbox'
@@ -46,6 +46,9 @@ set completeopt-=preview
 
 " == pangloss/vim-javascript ==
 let g:javascript_plugin_flow = 1
+
+" == othree/javascript-libraries-syntax.vim ==
+let g:used_javascript_libs = 'react'
 
 " == mxw/vim-jsx ==
 let g:jsx_ext_required = 0
@@ -76,6 +79,7 @@ inoremap <C-T> <ESC>:FZF<CR>i
 nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
+
 " ==========================================
 
 " === User settings ==
@@ -84,7 +88,6 @@ inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 " everything past this line and customize things to
 " your liking.
 "                                   - @zperrault
-
 
 set number
 set relativenumber
@@ -98,6 +101,9 @@ endif
 
 au BufNewFile,BufRead *.es6 set filetype=javascript.jsx
 au BufWritePost *.es6 if g:flow#enable | call g:flow#typecheck() | endif
+
+au Filetype gitcommit setlocal spell textwidth=72
+au Filetype markdown setlocal spell textwidth=72
 
 nnoremap <ESC> :noh<CR><ESC>
 
