@@ -37,7 +37,7 @@ a combination of three plugins to achieve syntax highlighting bliss.
   * mxw/vim-jsx
   * gavocanov/vim-js-indent
 
-**TODO: Screenshot**
+![Syntax highlighting](http://i.imgur.com/Vz6ImNa.png)
 
 #### Intelligent and fast autocomplete
 
