@@ -10,7 +10,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ervandew/supertab'
 
@@ -26,6 +26,10 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 " == JavaScript tools integration ==
 Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'scrooloose/syntastic'
+
+
+" == My personal plugins ==
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -87,6 +91,7 @@ inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 set number
 set relativenumber
 set noshowmode
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 if filereadable(getcwd() . '/node_modules/@trunkclub/build/node_modules/flow-bin/cli.js')
@@ -100,3 +105,7 @@ nnoremap <ESC> :noh<CR><ESC>
 
 xnoremap < <gv
 xnoremap > >gv
+
+let g:gruvbox_italic=1
+set background=dark
+colorscheme gruvbox
