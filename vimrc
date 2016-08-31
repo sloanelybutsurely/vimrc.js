@@ -16,15 +16,15 @@ Plug 'ervandew/supertab'
 
 " == Autocomplete plugins ==
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
 
 " == JavaScript syntax highlighting ==
-Plug 'othree/yajs.vim'
-Plug 'othree/es.next.syntax.vim'
-Plug 'mxw/vim-jsx'
+Plug 'gavocanov/vim-js-indent', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 " == JavaScript tools integration ==
-Plug 'flowtype/vim-flow'
+Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'scrooloose/syntastic'
 
 call plug#end()
@@ -40,6 +40,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:tern_request_timeout = 1
 let g:tern_show_signature_in_pum = 0
 set completeopt-=preview
+
+" == pangloss/vim-javascript ==
+let g:javascript_plugin_flow = 1
 
 " == mxw/vim-jsx ==
 let g:jsx_ext_required = 0
