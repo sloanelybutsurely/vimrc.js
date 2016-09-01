@@ -6,6 +6,12 @@ A vimrc that Just Works™ for modern JavaScript development.
 see something that you think needs fixed, please open up an issue or if
 you're feeling particularly ambitious, a Pull Request!
 
+## TODO
+  - [ ] Support `vim` as well as `neovim`
+  - [ ] Really good install instructions
+  - [ ] A clear README with keybindings and available settings front and
+    center
+
 ## Installing
 
 ### Prerequisities
