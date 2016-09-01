@@ -112,7 +112,7 @@ au BufWritePost *.es6 if g:flow#enable | call g:flow#typecheck() | endif
 au Filetype gitcommit setlocal spell textwidth=72
 au Filetype markdown setlocal spell textwidth=72
 
-nnoremap :noh<CR><ESC>
+nnoremap <ESC> :noh<CR><ESC>
 
 xnoremap < <gv
 xnoremap > >gv
