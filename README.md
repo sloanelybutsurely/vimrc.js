@@ -37,14 +37,14 @@ a combination of three plugins to achieve syntax highlighting bliss.
   * mxw/vim-jsx
   * gavocanov/vim-js-indent
 
-![Syntax highlighting](http://i.imgur.com/Vz6ImNa.png)
+![Syntax highlighting](http://i.imgur.com/aOrAmyr.png)
 
 #### Intelligent and fast autocomplete
 
 A combination of deoplete and tern means that you'll get smart
 completion suggestions as you type.
 
-**TODO: Screenshot**
+![autocomplete](http://i.imgur.com/YeyRkB0.png)
 
 #### Eslint and FlowType errors on save
 
@@ -56,7 +56,11 @@ jump straight to the problem.
 Fuzzy finding is provided by `fzf`. Open the fuzzy searcher using `<C-t>`
 (like Atom)
 
+![FZF](http://i.imgur.com/1hKJWei.png)
+
 #### File tree viewing
 
 NERDTree provides a project viewer. Toggle it using `<C-\>` (also
 similar to Atom).
+
+![NERDTree](http://i.imgur.com/Lzi08Aa.png)
