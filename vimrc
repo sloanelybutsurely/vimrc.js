@@ -29,6 +29,8 @@ Plug 'scrooloose/syntastic'
 
 " == My personal plugins ==
 Plug 'morhetz/gruvbox'
+Plug 'itchyny/lightline.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 call plug#end()
 
@@ -80,6 +82,11 @@ nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
 
 
+
+
+
+
+
 " ==========================================
 
 " === User settings ==
@@ -105,13 +112,15 @@ au BufWritePost *.es6 if g:flow#enable | call g:flow#typecheck() | endif
 au Filetype gitcommit setlocal spell textwidth=72
 au Filetype markdown setlocal spell textwidth=72
 
-nnoremap <ESC> :noh<CR><ESC>
+nnoremap :noh<CR><ESC>
 
 xnoremap < <gv
 xnoremap > >gv
 
-set laststatus=1
-
 let g:gruvbox_italic=1
 set background=dark
 colorscheme gruvbox
+
+let g:lightline = {
+  \ 'colorscheme': 'gruvbox',
+  \ }
