@@ -1,0 +1,37 @@
+" ==========================================
+
+" === User settings ==
+"
+" These are my personal settings. Feel free to remove
+" everything past this line and customize things to
+" your liking.
+"                                   - @zperrault
+
+set number
+set relativenumber
+set noshowmode
+:let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+if filereadable(getcwd() . '/node_modules/@trunkclub/build/node_modules/flow-bin/cli.js')
+  let g:flow#flowpath = getcwd() . '/node_modules/@trunkclub/build/node_modules/flow-bin/cli.js'
+endif
+
+au BufNewFile,BufRead *.es6 set filetype=javascript.jsx
+au BufWritePost *.es6 if g:flow#enable | call g:flow#typecheck() | endif
+
+au Filetype gitcommit setlocal spell textwidth=72
+au Filetype markdown setlocal spell textwidth=72
+
+nnoremap <ESC> :noh<CR><ESC>
+
+xnoremap < <gv
+xnoremap > >gv
+
+let g:gruvbox_italic=1
+set background=dark
+colorscheme gruvbox
+
+let g:lightline = {
+  \ 'colorscheme': 'gruvbox',
+  \ }

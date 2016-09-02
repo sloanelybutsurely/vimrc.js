@@ -1,0 +1,26 @@
+" == General editor plugins ==
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-repeat'
+Plug 'jiangmiao/auto-pairs'
+
+" == Autocomplete plugins ==
+Plug 'ervandew/supertab'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
+else
+  Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+endif
+
+" == JavaScript syntax highlighting ==
+Plug 'gavocanov/vim-js-indent', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
+
+" == JavaScript tools integration ==
+Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'scrooloose/syntastic'
