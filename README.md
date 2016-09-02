@@ -14,21 +14,8 @@ you're feeling particularly ambitious, a Pull Request!
 
 ## Installing
 
-### Prerequisities
-
-  * [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-  * [Neovim python 3 client](https://github.com/neovim/python-client)
-  * [vim-plug](https://github.com/junegunn/vim-plug#neovim)
-
-### Downloading
-
-**NOTE:** This will overwrite any existing `init.vim` that you have
-configured for Neovim. It is recommended that you back up your config
-before trying this out.
-
 ```
-curl -fLo ~/.config/nvim/init.vim --create-dirs \
-  https://raw.githubusercontent.com/zperrault/vimrc.js/master/vimrc
+curl -o- https://raw.githubusercontent.com/zperrault/vimrc.js/master/install.sh
 ```
 
 ### What's in the box?
