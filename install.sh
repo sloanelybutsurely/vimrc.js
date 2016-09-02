@@ -18,8 +18,8 @@ echo "done."
 
 echo -n "Installing vimrc.js... "
 git clone git@github.com:zperrault/vimrc.js.git ~/.vimrc.js &> /dev/null
-echo "\" Put your personal settings here...\n" > ~/.vimrc.js/vimrc.local
-echo "\" Add additional plugins here...\n" > ~/.vimrc.js/vimrc.plugs.local
+echo "\" Put your personal settings here..." > ~/.vimrc.js/vimrc.local
+echo "\" Add additional plugins here..." > ~/.vimrc.js/vimrc.plugs.local
 echo "done."
 
 if [[ -f $VIMRC ]]; then
