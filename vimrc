@@ -53,3 +53,8 @@ inoremap <C-T> <ESC>:FZF<CR>i
 " == scrooloose/nerdtree ==
 nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
+
+try
+  source ~/.vimrc.js/vimrc.local
+catch
+endtry
