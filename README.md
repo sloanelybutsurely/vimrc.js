@@ -15,7 +15,7 @@ you're feeling particularly ambitious, a Pull Request!
 ## Installing
 
 ```
-curl -o- https://raw.githubusercontent.com/zperrault/vimrc.js/master/install.sh
+curl -o- https://raw.githubusercontent.com/zperrault/vimrc.js/master/install.sh | bash
 ```
 
 ### What's in the box?
