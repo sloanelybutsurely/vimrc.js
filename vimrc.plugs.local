@@ -1,5 +1,0 @@
-" == My personal plugins ==
-Plug 'editorconfig/editorconfig-vim'
-Plug 'morhetz/gruvbox'
-Plug 'itchyny/lightline.vim'
-Plug 'shinchu/lightline-gruvbox.vim'
