@@ -2,14 +2,6 @@
 
 A vimrc that Just Works™ for modern JavaScript development.
 
-👋 Hi! This project is very much a Work in Progress right now. If you
-see something that you think needs fixed, please open up an issue or if
-you're feeling particularly ambitious, a Pull Request!
-
-## TODO
-  - [ ] A clear README with keybindings and available settings front and
-    center
-
 ## Installing
 
 ### The easy way
@@ -31,12 +23,26 @@ I understand that `curl`-ing and executing random shell scripts can be scary.
 You are encouraged to view the source of this file (and tell me how if can
 be better).
 
+Once installed, you can add your own plugins to `~/.vimrc.js/vimrc.plugs.local` and
+your own settings to `~/.vimrc.js/vimrc.local`.
+
 ### The DIY way
 
 You are by no means required to use the automated installer. All used plugins
 are listed in [`vimrc.plugs`](vimrc.plugs) and all settings for these plugins
 are listed in [`vimrc`](vimrc). Feel free to copy and paste pieces of these
 files into your own vimrc.
+
+Once installed, you can add your own plugins to `~/.vimrc.js/vimrc.plugs.local` and
+your own settings to `~/.vimrc.js/vimrc.local`.
+
+## Usage
+
+### Keybindings
+
+ - `<C-\>`- open project tree viewer
+ - `<C-t>` - start fuzzy file finding
+ - keybindings provided by [vim-commentary](https://github.com/tpope/vim-commentary#commentaryvim) and [vim-surround](https://github.com/tpope/vim-surround#surroundvim)
 
 ## What's in the box?
 
