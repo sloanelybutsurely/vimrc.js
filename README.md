@@ -38,9 +38,9 @@ are listed in [`vimrc.plugs`](vimrc.plugs) and all settings for these plugins
 are listed in [`vimrc`](vimrc). Feel free to copy and paste pieces of these
 files into your own vimrc.
 
-### What's in the box?
+## What's in the box?
 
-#### JavaScript, es6+, FlowType, and JSX syntax highlighting and indentation
+### JavaScript, es6+, FlowType, and JSX syntax highlighting and indentation
 
 Unfortunately there isn't a single plugin out there that provides proper
 syntax highlighting for modern JavaScript development. This project uses
@@ -52,26 +52,26 @@ a combination of three plugins to achieve syntax highlighting bliss.
 
 ![Syntax highlighting](http://i.imgur.com/aOrAmyr.png)
 
-#### Intelligent and fast autocomplete
+### Intelligent and fast autocomplete
 
 A combination of deoplete and tern means that you'll get smart
 completion suggestions as you type.
 
 ![autocomplete](http://i.imgur.com/YeyRkB0.png)
 
-#### Eslint and FlowType errors on save
+### Eslint and FlowType errors on save
 
 Errors reported by eslint and flow are displayed inside vim so you can
 jump straight to the problem.
 
-#### Fuzzy file searching
+### Fuzzy file searching
 
 Fuzzy finding is provided by `fzf`. Open the fuzzy searcher using `<C-t>`
 (like Atom)
 
 ![FZF](http://i.imgur.com/1hKJWei.png)
 
-#### File tree viewing
+### File tree viewing
 
 NERDTree provides a project viewer. Toggle it using `<C-\>` (also
 similar to Atom).
