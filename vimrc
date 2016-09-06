@@ -31,7 +31,6 @@ let g:jsx_ext_required = 0
 " == flowtype/vim-flow ==
 let g:flow#enable = 1
 let g:flow#autoclose = 1
-let g:flow#omnicomplete = 1
 
 " == scrooloose/syntastic ==
 set statusline+=%#warningmsg#
