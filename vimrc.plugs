@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " == Autocomplete plugins ==
 Plug 'ervandew/supertab'

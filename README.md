@@ -77,3 +77,5 @@ NERDTree provides a project viewer. Toggle it using `<C-\>` (also
 similar to Atom).
 
 ![NERDTree](http://i.imgur.com/Lzi08Aa.png)
+
+### Git diff markers in the gutter
