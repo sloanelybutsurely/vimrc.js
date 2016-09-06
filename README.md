@@ -7,16 +7,36 @@ see something that you think needs fixed, please open up an issue or if
 you're feeling particularly ambitious, a Pull Request!
 
 ## TODO
-  - [ ] Support `vim` as well as `neovim`
-  - [ ] Really good install instructions
   - [ ] A clear README with keybindings and available settings front and
     center
 
 ## Installing
 
+### The easy way
+
+The easiest way to download and use this configuration is to issue the
+following command.
+
 ```
 curl -o- https://raw.githubusercontent.com/zperrault/vimrc.js/master/install.sh | bash
 ```
+
+This command will download the [installation script](install.sh) and run it
+through BASH. This script will detect if you have neovim installed, install
+vim-plug, clone this repo into `~/.vimrc.js`, backup your existing vim or
+neovim configuration, symlink `~/.vimrc.js/vimrc` to the appropriate path,
+and install plugins with vim-plug.
+
+I understand that `curl`-ing and executing random shell scripts can be scary.
+You are encouraged to view the source of this file (and tell me how if can
+be better).
+
+### The DIY way
+
+You are by no means required to use the automated installer. All used plugins
+are listed in [`vimrc.plugs`](vimrc.plugs) and all settings for these plugins
+are listed in [`vimrc`](vimrc). Feel free to copy and paste pieces of these
+files into your own vimrc.
 
 ### What's in the box?
 
