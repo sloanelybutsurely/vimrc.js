@@ -15,7 +15,6 @@ if has('nvim')
   Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
 else
   Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
-  Plug 'ternjs/tern_for_vim', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
 endif
 
 " == JavaScript syntax highlighting ==
