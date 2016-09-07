@@ -7,6 +7,7 @@ Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'itchyny/lightline.vim'
 
 " == Autocomplete plugins ==
 Plug 'ervandew/supertab'
