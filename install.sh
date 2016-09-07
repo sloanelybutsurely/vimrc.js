@@ -40,7 +40,7 @@ curl -sfLo $AUTOLOAD/plug.vim --create-dirs \
 echo "done."
 
 echo -n "Installing vimrc.js... "
-git clone --quiet git@github.com:zperrault/vimrc.js.git ~/.vimrc.js
+git clone --quiet https://github.com/zperrault/vimrc.js.git ~/.vimrc.js
 echo "done."
 
 if [[ -f $VIMRC ]]; then
