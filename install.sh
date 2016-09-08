@@ -44,7 +44,7 @@ git clone --quiet https://github.com/zperrault/vimrc.js.git ~/.vimrc.js
 echo "done."
 
 if [[ -f $VIMRC ]]; then
-  echo -n "Baking up existing vimrc... "
+  echo -n "Backing up existing vimrc... "
   mv $VIMRC $VIMRC.bak
   echo "done."
 fi
