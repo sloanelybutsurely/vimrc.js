@@ -23,6 +23,33 @@ if has('nvim')
   let g:tern_request_timeout = 1
   let g:tern_show_signature_in_pum = 0
   set completeopt-=preview
+
+  " == neomake/neomake ==
+  let g:neomake_javascript_jshint_maker = {
+  \ 'args': ['--verbose'],
+  \ 'errorformat': '%A%f: line %l\, col %v\, %m \(%t%*\d\)',
+  \ }
+  let g:neomake_warning_sign = {
+  \ 'text': 'W',
+  \ 'texthl': 'WarningMsg',
+  \ }
+  let g:neomake_error_sign = {
+  \ 'text': 'E',
+  \ 'texthl': 'ErrorMsg',
+  \ }
+  let g:neomake_javascript_enabled_makers = ['eslint']
+  autocmd! BufWritePost * Neomake
+else
+  " == scrooloose/syntastic ==
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_always_populate_loc_list = 0
+  let g:syntastic_auto_jump = 0
+  let g:syntastic_auto_loc_list = 0
+  let g:syntastic_check_on_open = 0
+  let g:syntastic_check_on_wq = 1
+  let g:syntastic_javascript_checkers = ['eslint']
 endif
 
 " == mxw/vim-jsx ==
@@ -31,17 +58,6 @@ let g:jsx_ext_required = 0
 " == flowtype/vim-flow ==
 let g:flow#enable = 1
 let g:flow#autoclose = 1
-
-" == scrooloose/syntastic ==
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_jump = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
 
 " === Keybindings ===
 
