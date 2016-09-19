@@ -26,4 +26,9 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascri
 
 " == JavaScript tools integration ==
 Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'scrooloose/syntastic'
+if has('nvim')
+  Plug 'neomake/neomake'
+else
+  Plug 'scrooloose/syntastic'
+endif
+
