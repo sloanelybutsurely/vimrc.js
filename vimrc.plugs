@@ -13,22 +13,23 @@ Plug 'itchyny/lightline.vim'
 Plug 'ervandew/supertab'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern', 'for': ['javascript', 'javascript.jsx'] }
+  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+  Plug 'steelsojka/deoplete-flow'
 else
   Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 endif
 
 " == JavaScript syntax highlighting ==
-Plug 'othree/yajs.vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'othree/yajs.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'mxw/vim-jsx'
+Plug 'othree/javascript-libraries-syntax.vim'
 
 " == JavaScript tools integration ==
-Plug 'flowtype/vim-flow', { 'for': ['javascript', 'javascript.jsx'] }
 if has('nvim')
   Plug 'neomake/neomake'
 else
   Plug 'scrooloose/syntastic'
+  Plug 'flowtype/vim-flow'
 endif
 
