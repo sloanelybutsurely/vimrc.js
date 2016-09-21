@@ -26,10 +26,10 @@ Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 
 " == JavaScript tools integration ==
+Plug 'flowtype/vim-flow'
 if has('nvim')
-  Plug 'neomake/neomake'
+  Plug 'neomake/neomake', { 'do': 'npm install -g eslint'}
 else
-  Plug 'scrooloose/syntastic'
-  Plug 'flowtype/vim-flow'
+  Plug 'scrooloose/syntastic', { 'do': 'npm install -g eslint'}
 endif
 
