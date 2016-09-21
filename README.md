@@ -20,7 +20,7 @@ neovim configuration, symlink `~/.vimrc.js/vimrc` to the appropriate path,
 and install plugins with vim-plug.
 
 I understand that `curl`-ing and executing random shell scripts can be scary.
-You are encouraged to view the source of this file (and tell me how if can
+You are encouraged to view the source of this file (and tell me how it can
 be better).
 
 Once installed, you can add your own plugins to `~/.vimrc.js/vimrc.plugs.local` and
