@@ -94,3 +94,5 @@ similar to Atom).
 ![NERDTree](http://i.imgur.com/Lzi08Aa.png)
 
 ### Git diff markers in the gutter
+
+![vim-gitgutter](https://github.com/airblade/vim-gitgutter)
