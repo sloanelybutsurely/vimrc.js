@@ -12,6 +12,7 @@ endtry
 call plug#end()
 
 syntax enable
+set number
 
 function! StrTrim(txt)
   return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
