@@ -45,6 +45,17 @@ files into your own vimrc.
 Once installed, you can add your own plugins to `~/.vimrc.js/vimrc.plugs.local` and
 your own settings to `~/.vimrc.js/vimrc.local`.
 
+## Updating
+
+If you've only modified the `*.local` files, you can update to the
+latest version at any time by running the following:
+
+```
+cd ~/.vimrc.js
+git pull origin master
+command $(which nvim || which vim) +PlugUpdate +qall
+```
+
 ## Usage
 
 ### Keybindings

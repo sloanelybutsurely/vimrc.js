@@ -25,6 +25,12 @@ Plug 'othree/es.next.syntax.vim'
 Plug 'mxw/vim-jsx'
 Plug 'othree/javascript-libraries-syntax.vim'
 
+" == SCSS and CSS syntax highlighting ==
+if v:version < 704
+  Plug 'JulesWang/css.vim'
+endif
+Plug 'cakebaker/scss-syntax.vim'
+
 " == JavaScript tools integration ==
 if has('nvim')
   Plug 'neomake/neomake'
