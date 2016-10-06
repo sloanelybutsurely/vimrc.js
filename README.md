@@ -106,4 +106,4 @@ similar to Atom).
 
 ### Git diff markers in the gutter
 
-![vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+[vim-gitgutter](https://github.com/airblade/vim-gitgutter)
