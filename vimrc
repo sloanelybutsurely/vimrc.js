@@ -33,19 +33,30 @@ if has('nvim')
   set completeopt-=preview
 
   " == neomake/neomake ==
+  let g:flow_maker = {
+  \ 'exe': 'sh',
+  \ 'args': ['-c', g:flow_path.' check-contents < '.expand('%:p').' --json --strip-root | flow-vim-quickfix --path='.expand('%:p'), '%:p'],
+  \ 'errorformat': '%E%f:%l:%c\,%n: %m',
+  \ 'cwd': '%:p:h'
+  \ }
+
   let g:neomake_warning_sign = {
   \ 'text': 'W',
   \ 'texthl': 'WarningMsg',
   \ }
+
   let g:neomake_error_sign = {
   \ 'text': 'E',
   \ 'texthl': 'ErrorMsg',
   \ }
-  let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
-  let g:neomake_jsx_enabled_makers = ['eslint', 'flow']
 
-  let g:neomake_javascript_flow_exe = g:flow_path
-  let g:neomake_jsx_flow_exe = g:flow_path
+  let g:makers = ['eslint', 'flow']
+
+  let g:neomake_javascript_enabled_makers = g:makers
+  let g:neomake_jsx_enabled_makers = g:makers
+
+  let g:neomake_javascript_flow_maker = g:flow_maker
+  let g:neomake_jsx_flow_maker = g:flow_maker
 
   autocmd! BufWritePost * Neomake
 else

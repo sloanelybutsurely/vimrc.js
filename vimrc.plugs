@@ -1,6 +1,6 @@
 " == General editor plugins ==
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
@@ -20,6 +20,7 @@ else
 endif
 
 " == JavaScript syntax highlighting ==
+Plug 'pangloss/vim-javascript'
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'mxw/vim-jsx'
@@ -34,8 +35,8 @@ Plug 'cakebaker/scss-syntax.vim'
 " == JavaScript tools integration ==
 Plug 'flowtype/vim-flow'
 if has('nvim')
-  Plug 'neomake/neomake', { 'do': 'npm install -g eslint'}
+  Plug 'neomake/neomake'
 else
-  Plug 'scrooloose/syntastic', { 'do': 'npm install -g eslint'}
+  Plug 'scrooloose/syntastic'
 endif
 
