@@ -6,24 +6,18 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/lightline.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 " == Autocomplete plugins ==
 Plug 'ervandew/supertab'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins'  }
-  Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-  Plug 'steelsojka/deoplete-flow'
-else
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
-endif
+Plug 'Shougo/neocomplete'
+Plug 'flowtype/vim-flow'
 
 " == JavaScript syntax highlighting ==
 Plug 'othree/yajs.vim'
 Plug 'othree/es.next.syntax.vim'
 Plug 'mxw/vim-jsx'
-Plug 'othree/javascript-libraries-syntax.vim'
 
 " == SCSS and CSS syntax highlighting ==
 if v:version < 704
@@ -32,10 +26,4 @@ endif
 Plug 'cakebaker/scss-syntax.vim'
 
 " == JavaScript tools integration ==
-if has('nvim')
-  Plug 'neomake/neomake'
-else
-  Plug 'scrooloose/syntastic'
-  Plug 'flowtype/vim-flow'
-endif
-
+Plug 'w0rp/ale'
