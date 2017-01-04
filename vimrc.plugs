@@ -1,8 +1,9 @@
 " == General editor plugins ==
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
@@ -12,18 +13,18 @@ Plug 'christoomey/vim-tmux-navigator'
 " == Autocomplete plugins ==
 Plug 'ervandew/supertab'
 Plug 'Shougo/neocomplete'
-Plug 'flowtype/vim-flow'
+Plug 'flowtype/vim-flow', { 'for': 'javascipt' }
 
 " == JavaScript syntax highlighting ==
-Plug 'othree/yajs.vim'
-Plug 'othree/es.next.syntax.vim'
-Plug 'mxw/vim-jsx'
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 
 " == SCSS and CSS syntax highlighting ==
 if v:version < 704
-  Plug 'JulesWang/css.vim'
+  Plug 'JulesWang/css.vim', { 'for': 'css' }
 endif
-Plug 'cakebaker/scss-syntax.vim'
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 
 " == JavaScript tools integration ==
 Plug 'w0rp/ale'
