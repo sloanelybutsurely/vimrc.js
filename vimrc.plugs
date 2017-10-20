@@ -4,6 +4,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'Shougo/echodoc.vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',

@@ -36,9 +36,21 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " === Keybindings ===
 
+nnoremap <ESC> :nohlsearch<CR>
+
 " == scrooloose/nerdtree ==
 nnoremap <C-\> :NERDTreeToggle<CR>
 inoremap <C-\> <ESC>:NERDTreeToggle<CR>
+
+nnoremap <C-t> :Files<CR>
+inoremap <C-t> <ESC>:Files<CR>
+nnoremap <C-f> :Ag<CR>
+inoremap <C-f> <ESC>:Ag<CR>
+
+tnoremap <C-w>h <C-\><C-n><C-w>h
+tnoremap <C-w>j <C-\><C-n><C-w>j
+tnoremap <C-w>k <C-\><C-n><C-w>k
+tnoremap <C-w>l <C-\><C-n><C-w>l
 
 try
   source ~/.vimrc.js/vimrc.local
