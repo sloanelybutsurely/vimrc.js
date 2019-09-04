@@ -1,3 +1,5 @@
+This project is no longer under active development. Feel free to use it and open issues and pull requests but new features won't be coming for the foreseeable future.
+
 # vimrc.js
 
 A vimrc that Just Works™ for modern JavaScript development.
@@ -60,9 +62,9 @@ command $(which nvim || which vim) +PlugUpdate +qall
 
 ### Keybindings
 
- - `<C-\>`- open project tree viewer
- - `<C-t>` - start fuzzy file finding
- - keybindings provided by [vim-commentary](https://github.com/tpope/vim-commentary#commentaryvim) and [vim-surround](https://github.com/tpope/vim-surround#surroundvim)
+- `<C-\>`- open project tree viewer
+- `<C-t>` - start fuzzy file finding
+- keybindings provided by [vim-commentary](https://github.com/tpope/vim-commentary#commentaryvim) and [vim-surround](https://github.com/tpope/vim-surround#surroundvim)
 
 ## What's in the box?
 
@@ -71,10 +73,10 @@ command $(which nvim || which vim) +PlugUpdate +qall
 Unfortunately there isn't a single plugin out there that provides proper
 syntax highlighting for modern JavaScript development. This project uses
 a combination of three plugins to achieve syntax highlighting bliss.
-  
-  * pangloss/vim-javascript
-  * mxw/vim-jsx
-  * gavocanov/vim-js-indent
+
+- pangloss/vim-javascript
+- mxw/vim-jsx
+- gavocanov/vim-js-indent
 
 ![Syntax highlighting](http://i.imgur.com/aOrAmyr.png)
 
